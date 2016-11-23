@@ -1,0 +1,6 @@
+framework module BugEase_iOS {
+  umbrella header "BugEase_iOS.h"
+
+  export *
+  module * { export * }
+}
