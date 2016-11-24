@@ -28,20 +28,20 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/hzgoucheng/BugEase_iOS.git", :tag => s.version.to_s}
+  s.source       = { :git => "https://github.com/hzgoucheng/BugEase_iOS.git"}
 
   s.source_files  = 'BugEase_iOS.framework/Headers/*.{h}'
 
   s.resources = 'BugEase_ios_Bundle.bundle'
 
-  s.preserve_paths = "BugEase_iOS.framework/*", "BugEase_ios_Bundle.bundle"
+  s.preserve_paths = "BugEase_iOS.framework/*", "Classes/BugEase_ios_Bundle.bundle"
 
   #s.frameworks = "BugEase_iOS"
 
   s.libraries = "z.1.2.5"
 
   s.requires_arc = true
-  s.vendored_frameworks = 'BugEase_iOS.framework'
+  #s.vendored_frameworks = 'Pod/BugEase/BugEase_iOS.framework'
   s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/BugEase_iOS/" ,"OTHER_LDFLAGS" =>"-ObjC"}
   # s.dependency "JSONKit", "~> 1.4"
 
