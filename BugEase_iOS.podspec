@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BugEase_iOS"
-  s.version      = "1.2"
+  s.version      = "1.2.1"
   s.summary      = "ios端Bug反馈SDK."
 
   s.homepage     = "https://bugease.hz.netease.com"
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   #s.vendored_frameworks = 'Pod/BugEase/BugEase_iOS.framework'
-  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/BugEase_iOS" ,"OTHER_LDFLAGS" =>"-ObjC"}
+  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/BugEase_iOS/" ,"OTHER_LDFLAGS" =>"-ObjC"}
   # s.dependency "JSONKit", "~> 1.4"
 
 end
