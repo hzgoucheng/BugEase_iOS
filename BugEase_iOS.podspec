@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "BugEase"
+  s.name         = "BugEase_iOS"
   s.version      = "1.2"
   s.summary      = "ios端Bug反馈SDK."
 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
                 
                 LICENSE
   }
-  
+
   s.author       = { "勾承甫" => "hhzgouchengfu@corp.netease.com" }
 
   s.platform     = :ios, "7.0"
@@ -41,8 +41,8 @@ Pod::Spec.new do |s|
   s.libraries = "z.1.2.5"
 
   s.requires_arc = true
-  s.vendored_frameworks = "BugEase_iOS.framework"
-  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/BugEase_iOS" ,"OTHER_LDFLAGS" =>"-ObjC"}
+  s.vendored_frameworks = 'BugEase_iOS.framework'
+  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/BugEase_iOS/" ,"OTHER_LDFLAGS" =>"-ObjC"}
   # s.dependency "JSONKit", "~> 1.4"
 
 end
