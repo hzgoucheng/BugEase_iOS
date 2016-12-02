@@ -26,9 +26,6 @@ typedef NS_ENUM(NSInteger, BEModel){
     
 +(void) clearUserAccountInfo;
 
-//设置系统日志大小
-
-+(void) setSystemLogSizeWithKB:(NSInteger) sizeWithKB;
 
 //设置应用日志路径
 
@@ -36,18 +33,13 @@ typedef NS_ENUM(NSInteger, BEModel){
 //设置应用日志大小
 +(void) setApplyLogSizeWithKB:(NSInteger) sizeWithKB;
 
-//设置操作步数
-
-+(void) setUserOperateMaxNum:(NSInteger) maxNum;
-
-
 //设置自定义字段
 
 +(void) setUserData:(NSString*) key andValue:(NSString*) value;
 
 //自己直接调用API上传文件
 
-+(void) sendFeedBackWithType:(NSUInteger)type andContent:(NSString*) feedContent andReporter:(NSString*)reporter andImagePath:(NSString*)imagePath;
++(void) sendFeedBackWithType:(NSUInteger)type andContent:(NSString*) feedContent andReporter:(NSString*)reporter andImagePath:(NSString*)imagePath andTags:(NSArray*) tags;
 
 
 //Demo app 专用API
